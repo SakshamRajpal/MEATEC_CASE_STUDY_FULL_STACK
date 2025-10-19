@@ -17,7 +17,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://task-manager-by-saksham.netlify.app/", "http://localhost:3000", "http://localhost:3001"],
+    origin: ["https://task-manager-by-saksham.netlify.app/", "http://localhost:3000", "http://localhost:3001", "https://task-manager-by-saksham.netlify.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
