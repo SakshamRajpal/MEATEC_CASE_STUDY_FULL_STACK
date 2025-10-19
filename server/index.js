@@ -15,10 +15,16 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
+// --- Corrected CORS Configuration ---
 app.use(
   cors({
-    origin: ["https://task-manager-by-saksham.netlify.app/", "http://localhost:3000", "http://localhost:3001", "https://task-manager-by-saksham.netlify.app"],
-    methods: ["GET", "POST", "DELETE", "PUT"],
+    origin: [
+      "https://task-manager-by-saksham.netlify.app", // Cleaned URL (no trailing slash or duplicates)
+      "http://localhost:3000",
+      "http://localhost:3001",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"], // CRITICAL: Allows the auth token header
     credentials: true,
   })
 );
