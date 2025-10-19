@@ -1,4 +1,5 @@
 # Task Manager
+<img width="1919" height="933" alt="Screenshot 2025-10-19 171841" src="https://github.com/user-attachments/assets/8a673477-adc1-4848-aca9-f0ad4d332f1f" />
 
 A full-stack web application for efficient task management, built with the MERN stack (MongoDB, Express.js, React, Node.js). This platform enables users to register, authenticate, and manage tasks securely, with role-based access for admins and regular users. It supports task creation, updates, deletions, status tracking, and collaboration features like comments and asset uploads.
 
@@ -253,3 +254,4 @@ cd MEATEC_CASE_STUDY_FULL_STACK
 2. Commit changes (`git commit -m 'Add some amazing feature'`).
 3. Push to branch (`git push origin feature/amazing-feature`).
 4. Open a Pull Request.
+
